@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <title>Document</title>
+</head>
+<body class="bg-dark">
+    <div class="container-fluid">
+        <div class="card-body">
+            <h1 class="text-center text-white">Formulir PPDB <span class="text-white">SLBN Tenggarong</span></h1>
+        </div>
+        <div class="col-sm-9 mx-auto mb-5">
+            <div class="card card-primary">
+                <div class="card-body">
+                    <!--Form Area-->
+                    <form action="" method="POST">
+                        <div class="card-header mb-3 pl-0 bg-white">
+                            <h5 class="text-primary">Biodata</h5>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label>Nama Lengkap</label>
+                                <input type="text" name="nama" class="form-control">   
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Nama Panggilan</label>
+                                <input type="text" name="panggilan" class="form-control">   
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label>Anak ke-</label>
+                                <input type="text" name="anakke" class="form-control">   
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <label>Jenis Kelamin</label>
+                                <select class="form-control" name="jen_kel">
+                                    <option class="text-gray-500">--Pilih--</option>
+                                    <option>Laki-laki</option>
+                                    <option>Perempuan</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Tempat Lahir</label>
+                                <input type="text" name="tmp_lahir" class="form-control">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>Tanggal Lahir</label>
+                                <input type="date" name="tmp_lahir" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <label>Agama</label>
+                                <select class="form-control" name="agama">
+                                    <option class="text-gray-500">--Pilih--</option>
+                                    <option>Islam</option>
+                                    <option>Kristen</option>
+                                    <option>Katolik</option>
+                                    <option>Hindu</option>
+                                    <option>Budha</option>
+                                    <option>Konghucu</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-7">
+                                <label>Alamat/Jalan/Perumahan/Blok/No.</label>
+                                <input type="text" class="form-control" name="jalan">
+                            </div>
+                            <div class="form-group col-md-1">
+                                <label>RT</label>
+                                <input type="text" class="form-control" name="rt">
+                            </div>
+                            <div class="form-group col-md-1">
+                                <label>RW</label>
+                                <input type="text" class="form-control" name="rw">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label>Provinsi</label>
+                                <select class="form-control" name="prov">
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Kabupaten</label>
+                                <select class="form-control" name="kab">
+                                    <option></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label>Kecamatan</label>
+                                <select class="form-control" name="kec">
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Kelurahan/Desa</label>
+                                <select class="form-control" name="keldes">
+                                    <option></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label>Status Tempat Tinggal</label>
+                                <select class="form-control" name="status">
+                                    <option class="text-gray-500">--Pilih--</option>
+                                    <option>Milik Orang Tua/Wali/Kerabat</option>
+                                    <option>Kos/Kontrak</option>
+                                    <option>Asrama</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Jenis Disabilitas</label>
+                                <select class="form-control" name="kategori">
+                                    <option class="text-gray-500">--Pilih--</option>
+                                    <option>Tuna Daksa</option>
+                                    <option>Tuna Rungu</option>
+                                    <option>Tuna Wicara</option>
+                                    <option>Tuna Grahita</option>
+                                    <option>Tuna Ganda</option>
+                                    <option>Autis</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>No. HP Siswa</label>
+                                <input type="text" class="form-control" name="hpsiswa">
+                            </div>
+                        </div>
+                        <div class="card-header mb-3 pl-0 bg-white">
+                            <h5 class="text-primary">Data Periodik</h5>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <label>Tinggi Badan</label>
+                                <input type="text" name="tinggi" class="form-control" placeholder="dalam cm">   
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>Berat Badan</label>
+                                <input type="text" name="berat" class="form-control" placeholder="dalam kg">   
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>Jarak Rumah ke Sekolah</label>
+                                <input type="text" name="jarak" class="form-control" placeholder="dalam km">   
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>Waktu Tempuh</label>
+                                <input type="text" name="waktu" class="form-control" placeholder="dalam menit">   
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label>Status dalam Keluarga</label>
+                                <select class="form-control" name="statuskel">
+                                    <option class="text-gray-500">--Pilih--</option>
+                                    <option>Anak Kandung</option>
+                                    <option>Anak Angkat</option>
+                                    <option>Anak Tiri</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Jumlah Saudara Kandung</label>
+                                <input type="number" name="sdrkandung" class="form-control">   
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Jumlah Saudara Tiri</label>
+                                <input type="number" name="sdrtiri" class="form-control">   
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <label>Jumlah Adik Kandung</label>
+                                <input type="number" name="adkkandung" class="form-control">   
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>Jumlah Kakak Kandung</label>
+                                <input type="number" name="kakkandung" class="form-control">   
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>Jumlah Adik Tiri</label>
+                                <input type="number" name="adktiri" class="form-control">   
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>Jumlah Kakak Tiri</label>
+                                <input type="number" name="kaktiri" class="form-control">   
+                            </div>
+                        </div>
+                        <div class="card-header mb-3 pl-0 bg-white">
+                            <h5 class="text-primary">Data Orang Tua Kandung</h5>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label>Nama Lengkap Ayah</label>
+                                <input type="text" name="nmayah" class="form-control">   
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>Tempat Lahir Ayah</label>
+                                <input type="text" name="tmplahir_ayah" class="form-control">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>Tanggal Lahir Ayah</label>
+                                <input type="date" name="tgllahir_ayah" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label>Nama Lengkap Ibu</label>
+                                <input type="text" name="nmibu" class="form-control">   
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>Tempat Lahir Ibu</label>
+                                <input type="text" name="tmplahir_ibu" class="form-control">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>Tanggal Lahir Ibu</label>
+                                <input type="date" name="tgllahir_ibu" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <label>Pekerjaan Ayah</label>
+                                <select class="form-control" name="kerjaayah">
+                                    <option>--Pilih--</option>
+                                    <option>PNS/TNI/POLRI</option>
+                                    <option>BUMN</option>
+                                    <option>Swasta</option>
+                                    <option>Honorer</option>
+                                    <option>Buruh Lepas</option>
+                                    <option>Wiraswasta</option>
+                                    <option>Pejabat Politik</option>
+                                </select>   
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>Penghasilan Ayah per Bulan</label>
+                                <select class="form-control" name="gajiayah">
+                                    <option>--Pilih--</option>
+                                    <option>Di bawah Rp 1juta</option>
+                                    <option>Rp 1juta-Rp 1,99juta</option>
+                                    <option>Rp 2juta-Rp 4,99juta</option>
+                                    <option>Rp 5juta-Rp 9,99juta</option>
+                                    <option>Di atas Rp 10juta</option>
+                                </select>   
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>Pekerjaan Ibu</label>
+                                <select class="form-control" name="kerjaayah">
+                                    <option>--Pilih--</option>
+                                    <option>PNS/TNI/POLRI</option>
+                                    <option>BUMN</option>
+                                    <option>Swasta</option>
+                                    <option>Honorer</option>
+                                    <option>Buruh Lepas</option>
+                                    <option>Wiraswasta</option>
+                                    <option>Pejabat Politik</option>
+                                    <option>Ibu Rumah Tangga</option>
+                                </select>     
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>Penghasilan Ibu per Bulan</label>
+                                <select class="form-control" name="gajiibu">
+                                    <option>--Pilih--</option>
+                                    <option>Di bawah Rp 1juta</option>
+                                    <option>Rp 1juta-Rp 1,99juta</option>
+                                    <option>Rp 2juta-Rp 4,99juta</option>
+                                    <option>Rp 5juta-Rp 9,99juta</option>
+                                    <option>Di atas Rp 10juta</option>
+                                </select>   
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label>Status Ayah</label>
+                                <select class="form-control" name="statusayah">
+                                    <option>--Pilih--</option>
+                                    <option>Hidup</option>
+                                    <option>Meninggal</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label>Tahun Meninggal</label>
+                                <input type="number" class="form-control" name="meninggalayah">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Status Ibu</label>
+                                <select class="form-control" name="statusibu">
+                                    <option>--Pilih--</option>
+                                    <option>Hidup</option>
+                                    <option>Meninggal</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label>Tahun Meninggal</label>
+                                <input type="number" class="form-control" name="meninggalibu">
+                            </div>
+                        </div>
+                        <div class="card-header mb-3 pl-0 bg-white">
+                            <h5>Data Wali</h5>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label>Nama Lengkap</label>
+                                <input type="text" name="nama" class="form-control">   
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>Pekerjaan</label>
+                                <input type="text" name="kerjawali" class="form-control">   
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>Agama</label>
+                                <select class="form-control" name="agama">
+                                    <option class="text-gray-500">--Pilih Agama--</option>
+                                    <option>Islam</option>
+                                    <option>Kristen</option>
+                                    <option>Katolik</option>
+                                    <option>Hindu</option>
+                                    <option>Budha</option>
+                                    <option>Konghucu</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label>Jenis Kelamin</label>
+                                <select class="form-control" name="jenkel_wali">
+                                    <option class="text-gray-500">--Pilih Jenis Kelamin--</option>
+                                    <option>Laki-laki</option>
+                                    <option>Perempuan</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Tempat Lahir</label>
+                                <input type="text" name="tmplahir_wali" class="form-control">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Tanggal Lahir</label>
+                                <input type="date" name="tgllahir_wali" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label>No. HP Ayah/Ibu</label>
+                                <input type="text" class="form-control" name="hpwali">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Nama Jalan/Perumahan/Blok/No.</label>
+                                <input type="text" class="form-control" name="jalanwali">
+                            </div>
+                            <div class="form-group col-md-1">
+                                <label>RT</label>
+                                <input type="text" class="form-control" name="rtwali">
+                            </div>
+                            <div class="form-group col-md-1">
+                                <label>RW</label>
+                                <input type="text" class="form-control" name="rwwali">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label>Provinsi</label>
+                                <select class="form-control" name="provwali">
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Kabupaten</label>
+                                <select class="form-control" name="kabwali">
+                                    <option></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label>Kecamatan</label>
+                                <select class="form-control" name="kecwali">
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Kelurahan/Desa</label>
+                                <select class="form-control" name="keldeswali">
+                                    <option></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <label>Lama menjadi Wali</label>
+                                <select class="form-control" name="lamawali">
+                                    <option>--Pilihan--</option>
+                                    <option>Kurang dari 1 tahun</option>
+                                    <option>1 tahun s/d 5 tahun</option>
+                                    <option>Di atas 5 tahun</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label>Status Hubungan</label>
+                                <select class="form-control" name="statushubwali">
+                                    <option>--Pilihan Status--</option>
+                                    <option>Saudara</option>
+                                    <option>Keluarga/Kerabat</option>
+                                    <option>Orang Tua Asuh</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Penghasilan Rata-rata Wali per Bulan</label>
+                                <select class="form-control" name="gajiwali">
+                                    <option>--Pilih Penghasilan Wali--</option>
+                                    <option>Kurang dari Rp 1.000.000</option>
+                                    <option>Rp 1.000.000 s/d Rp 1.999.999</option>
+                                    <option>Rp 2.000.000 s/d Rp 4.999.999</option>
+                                    <option>Rp 5.000.000 s/d Rp 9.999.999</option>
+                                    <option>Lebih dari Rp 10.000.000</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="card-header mb-3 pl-0 bg-white">
+                            <h5 class="text-primary">Upload Persyaratan</h5>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label>KK (Asli)</label> <br>
+                                <input type="file" accept="image/*" name="fileKK">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Akte Kelahiran (Asli)</label> <br>
+                                <input type="file" accept="image/*" name="fileAkte">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label>Pas Photo</label> <br>
+                                <input type="file" accept="image/*" name="filePhoto">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label>Surat Keterangan Dokter Spesialis/Psikolog (Asli)</label> <br>
+                                <input type="file" accept="image/*" name="fileDokter">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Ijazah (Asli) untuk Jenjang SMP & SMA</label> <br>
+                                <input type="file" accept="image/*" name="fileIjazah">
+                            </div>
+                        </div>
+            
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                              Saya sudah yakin untuk menyimpan data
+                            </label>
+                        </div>
+                           
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-save"></i> Simpan</button>
+                        <button type="reset" class="btn btn-warning"><i class="fas fa-sync-alt"></i> Reset</button>
+
+
+
+
+                    </form>
+                    <!--End of Form Area-->
+                    
+                </div>
+
+              </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+</body>
+</html>
